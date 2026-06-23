@@ -9,7 +9,7 @@ The ASCEND project is a specialized robotic solution engineered for the ISRO Rob
 
 > **Notice regarding competitive integrity:** This repository serves strictly as a design, hardware, and media showcase. Proprietary autonomy scripts, heuristics algorithms, SIFT validation pipelines, and specific EKF3 parameter configurations have been omitted to protect the core IP of the project.
 
-![Arcaruco marker](/assests/tasks%20overview.png)
+![Autonomous Navigation](/assests/Video%20Project.mp4)
 
 ---
 
@@ -18,6 +18,8 @@ The system architecture utilizes a robust master-slave embedded computing paradi
 
 * **Avionics Layer (Slave):** A Pixhawk 2.4.8 flight controller running ArduPilot firmware handles low-level, high-frequency flight stabilization, motor mixing, and safety-critical failsafes independently [cite: 1, 2].
 * **Companion Computer Layer (Master):** An NVIDIA Jetson Orin Nano Super running Ubuntu 22.04 with ROS2 serves as the cognitive core. It processes visual data and issues precise velocity setpoints and waypoint commands to the avionics layer over MAVLink.
+
+![Autonoumous Aruco-Marker Landing](/assests/tasks%20overview.png)
 
 ---
 
@@ -59,8 +61,4 @@ The architecture includes a layered safety net to handle unpredictable environme
 
 ### High-Level Simulations
 ![Hardware-Software Interaction Map](/assets/hardware-software%20interaction%20map.png)
-
-<video width="100%" autoplay loop muted controls>
-  <source src="./assests/aruco%20marker.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Autonoumous Aruco-Marker Landing](/assests/aruco%20marker.mp4)
