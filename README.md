@@ -1,6 +1,6 @@
 # ASCEND: Autonomous Systematic Coverage and Exploration in No-GPS Environments
 
-**Team Drone Sentience (TeamID-10570) | Bharati Vidyapeeth College of Engineering, New Delhi**
+**Team Drone Sentience (TeamID-10570)**
 
 ---
 
@@ -55,18 +55,6 @@ The architecture includes a layered safety net to handle unpredictable environme
 
 ---
 
-## 🎥 Media Showcase
-
-*(Upload your high-quality media to the `/assets/` directory to populate this section)*
-
-### High-Level Diagrams
-* ![Hardware-Software Interaction Map](./assets/architecture/interaction_map.png)
-* ![Base Station Setup](./assets/hardware/base_station.png)
-
-### Flight Demonstrations
-* **Autonomous Takeoff & Hover (Stage 2)**
-  <br> `![Hover Demo](./assets/gifs/takeoff_hover.gif)`
-* **ArUco Precision Landing (Stage 4)**
-  <br> `![ArUco Landing](./assets/gifs/aruco_landing.gif)`
-* **Charging Interface Activation**
-  <br> `![Charging Pad](./assets/gifs/charging_activation.gif)`
+### High-Level Simulations
+* ![Hardware-Software Interaction Map](/assests/hardware-software%20interaction%20map.png)
+* ![Arcaruco marker](/assests/aruco%20marker.mp4)
