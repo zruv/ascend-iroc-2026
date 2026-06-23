@@ -61,6 +61,6 @@ The architecture includes a layered safety net to handle unpredictable environme
 ![Hardware-Software Interaction Map](./assets/hardware-software%20interaction%20map.png)
 
 <video width="100%" autoplay loop muted controls>
-  <source src="/assests/aruco marker.mp4" type="video/mp4">
+  <source src="./assets/aruco%20marker.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
