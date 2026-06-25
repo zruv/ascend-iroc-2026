@@ -62,3 +62,8 @@ The architecture includes a layered safety net to handle unpredictable environme
 ### High-Level Simulations
 ![Hardware-Software Interaction Map](/assests/hardware-software%20interaction%20map.png)
 ![Autonoumous Aruco-Marker Landing](/assests/arucomarker.mp4)
+
+<video width="100%" autoplay loop muted controls>
+  <source src="./assests/arucomarker.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
