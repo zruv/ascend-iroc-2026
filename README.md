@@ -9,7 +9,7 @@ The ASCEND project is a specialized robotic solution engineered for the ISRO Rob
 
 > **Notice regarding competitive integrity:** This repository serves strictly as a design, hardware, and media showcase. Proprietary autonomy scripts, heuristics algorithms, SIFT validation pipelines, and specific EKF3 parameter configurations have been omitted to protect the core IP of the project.
 
-<!-- ![Autonomous Navigation](/assests/Video%20Project.mp4) -->
+![Autonomous Navigation](/assests/VideoProject.mp4)
 
 ---
 
@@ -61,4 +61,4 @@ The architecture includes a layered safety net to handle unpredictable environme
 
 ### High-Level Simulations
 ![Hardware-Software Interaction Map](/assests/hardware-software%20interaction%20map.png)
-<!-- ![Autonoumous Aruco-Marker Landing](/assests/aruco%20marker.mp4) -->
+![Autonoumous Aruco-Marker Landing](/assests/arucomarker.mp4)
