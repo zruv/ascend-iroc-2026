@@ -4,28 +4,42 @@
 
 ---
 
-## Project Overview
+## 🚀 Project Overview
 The ASCEND project is a specialized robotic solution engineered for the ISRO Robotics Challenge - URSC. It is a fully autonomous quadcopter designed to conduct systematic exploration, feature detection, and precise localization in environments where GPS signals are unavailable or unreliable.
 
-> **Notice regarding competitive integrity:** This repository serves strictly as a design, hardware, and media showcase. Proprietary autonomy scripts, heuristics algorithms, SIFT validation pipelines, and specific EKF3 parameter configurations have been omitted to protect the core IP of the project.
-
 https://github.com/user-attachments/assets/3c659eac-25bc-42cf-8e59-2394a223c899
+*Autonomous Navigation Demo Video*
 
-Autonomous Navigation Demo Video
 ---
 
-## System Architecture
+## 🧠 System Architecture
 The system architecture utilizes a robust master-slave embedded computing paradigm to guarantee real-time flight stability while managing heavy cognitive workloads.
 
-* **Avionics Layer (Slave):** A Pixhawk 2.4.8 flight controller running ArduPilot firmware handles low-level, high-frequency flight stabilization, motor mixing, and safety-critical failsafes independently [cite: 1, 2].
+* **Avionics Layer (Slave):** A Pixhawk 2.4.8 flight controller running ArduPilot firmware handles low-level, high-frequency flight stabilization, motor mixing, and safety-critical failsafes independently.
 * **Companion Computer Layer (Master):** An NVIDIA Jetson Orin Nano Super running Ubuntu 22.04 with ROS2 serves as the cognitive core. It processes visual data and issues precise velocity setpoints and waypoint commands to the avionics layer over MAVLink.
 
-![Autonoumous Aruco-Marker Landing](/assests/tasks%20overview.png)
-Autonoumous Aruco-Marker Landing
+![Autonomous ArUco-Marker Landing](./assets/tasks%20overview.png)
+*Autonomous ArUco-Marker Landing Task Overview*
 
 ---
 
-## Hardware & Sensor Specifications
+## 📂 Source Code & Scripts
+The autonomy stack is divided into task-specific modules corresponding to the challenge rounds. You can explore the source code in the `src/` directory.
+
+### Qualification Round (`/src/qualification_round`)
+Handles the fundamental autonomous flight and hardware integration tasks:
+* **`land_aruco.py`**: Executes the precision visual servo descent onto the 6x6 ArUco fiducial marker located on the base station.
+* **`optical_flight.py`**: Manages the horizontal velocity estimation fusing optical flow and TOF altitude data for stable hovering.
+* **`qual_complete.py`**: The master sequence script for the qualification round.
+
+### Elimination Round (`/src/elimination_round`)
+Houses the advanced GPS-denied mapping and feature extraction logic:
+* **Navigation Models (`/navigation`)**: Contains the custom heuristics-based navigation logic (`autopilot.py`, `square.py`) used to execute the lawnmower (boustrophedon) arena survey without relying on computationally heavy ORB-SLAM pipelines.
+* **Image Validation (`/feature_matching`)**: Implements the Scale-Invariant Feature Transform (SIFT) algorithm (`drone_sift_matcher.py`) and Siamese Neural Networks (`siamese_finder.py`) to extract local feature vectors from aerial images and match them against reference targets.
+
+---
+
+## 🚁 Hardware & Sensor Specifications
 The platform has been meticulously upgraded to balance payload capacity, agility, and rigorous operational demands.
 
 ### Core Airframe & Propulsion
@@ -39,7 +53,7 @@ The platform has been meticulously upgraded to balance payload capacity, agility
 
 ---
 
-## Core Capabilities
+## 🛰️ Core Capabilities
 
 ### 1. GPS-Denied Autonomous Navigation
 ASCEND navigates entirely without external GPS by fusing data from its onboard IMU, optical flow, and downward-facing camera via Visual-Inertial Odometry (VIO). The exploration phase traverses the arena using a structured boustrophedon (lawnmower) pattern. The drone utilizes a custom heuristics-based approach—using cell indices and spatial equations—to determine precise navigation coordinates while minimizing computational overhead.
@@ -53,7 +67,7 @@ During the lawnmower survey, the drone captures HD imagery (1280x720). The image
 
 ---
 
-## Failsafe & Mitigation Protocols
+## 🛡️ Failsafe & Mitigation Protocols
 The architecture includes a layered safety net to handle unpredictable environments:
 * **Low Battery Protocol:** ArduPilot parameters continuously monitor voltage, triggering an automatic Land mode on critical thresholds.
 * **Signal & Thrust Loss:** The system features an immediate transition to a controlled Land mode if the RC signal is lost or if propulsion thrust falls below safe operational limits.
@@ -62,7 +76,8 @@ The architecture includes a layered safety net to handle unpredictable environme
 ---
 
 ### High-Level Simulations
-![Hardware-Software Interaction Map](/assests/hardware-software%20interaction%20map.png)
-Hardware-Software Interaction Map
-![Arucomarker](/assests/arucomarker.gif)
-Arucomarker
+![Hardware-Software Interaction Map](./assets/hardware-software%20interaction%20map.png)
+*Hardware-Software Interaction Map*
+
+![ArUco Marker Landing](./assets/arucomarker.gif)
+*ArUco Marker Precision Landing Demonstration*
