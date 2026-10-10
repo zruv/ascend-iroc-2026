@@ -7,8 +7,9 @@
 ## 🚀 Project Overview
 The ASCEND project is a specialized robotic solution engineered for the ISRO Robotics Challenge - URSC. It is a fully autonomous quadcopter designed to conduct systematic exploration, feature detection, and precise localization in environments where GPS signals are unavailable or unreliable.
 
-https://github.com/user-attachments/assets/3c659eac-25bc-42cf-8e59-2394a223c899
 *Autonomous Navigation Demo Video*
+
+https://github.com/user-attachments/assets/3c659eac-25bc-42cf-8e59-2394a223c899
 
 ---
 
