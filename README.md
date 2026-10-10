@@ -81,4 +81,4 @@ The architecture includes a layered safety net to handle unpredictable environme
 ![Hardware-Software Interaction Map](./assests/hardware-software%20interaction%20map.png)
 
 *Autonomous ArUco-Marker Landing Task Overview*
-<img src="./assests/tasks%20overview.png" alt="Task Overview" width="500">
+![Autonomous ArUco-Marker Landing](./assests/tasks%20overview.png)
