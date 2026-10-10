@@ -22,10 +22,6 @@ The system architecture utilizes a robust master-slave embedded computing paradi
 *Autonomous ArUco-Marker Landing Task Overview*
 <img src="./assests/tasks%20overview.png" alt="Task Overview" width="500">
 
-
-![Autonomous ArUco-Marker Landing](./assets/tasks%20overview.png)
-*Autonomous ArUco-Marker Landing Task Overview*
-
 ---
 
 ## 📂 Source Code & Scripts
@@ -81,8 +77,8 @@ The architecture includes a layered safety net to handle unpredictable environme
 ---
 
 ### High-Level Simulations
-![Hardware-Software Interaction Map](./assets/hardware-software%20interaction%20map.png)
 *Hardware-Software Interaction Map*
+![Hardware-Software Interaction Map](./assests/hardware-software%20interaction%20map.png)
 
-![ArUco Marker Landing](./assets/arucomarker.gif)
 *ArUco Marker Precision Landing Demonstration*
+![ArUco Marker Landing](./assets/arucomarker.gif)
