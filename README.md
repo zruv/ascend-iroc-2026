@@ -81,4 +81,4 @@ The architecture includes a layered safety net to handle unpredictable environme
 ![Hardware-Software Interaction Map](./assests/hardware-software%20interaction%20map.png)
 
 *ArUco Marker Precision Landing Demonstration*
-![ArUco Marker Landing](./assets/arucomarker.gif)
+![ArUco Marker Landing](./assests/arucomarker.gif)
