@@ -19,8 +19,8 @@ The system architecture utilizes a robust master-slave embedded computing paradi
 * **Avionics Layer (Slave):** A Pixhawk 2.4.8 flight controller running ArduPilot firmware handles low-level, high-frequency flight stabilization, motor mixing, and safety-critical failsafes independently.
 * **Companion Computer Layer (Master):** An NVIDIA Jetson Orin Nano Super running Ubuntu 22.04 with ROS2 serves as the cognitive core. It processes visual data and issues precise velocity setpoints and waypoint commands to the avionics layer over MAVLink.
 
-*Autonomous ArUco-Marker Landing Task Overview*
-<img src="./assests/tasks%20overview.png" alt="Task Overview" width="500">
+*ArUco Marker Precision Landing Demonstration*
+![ArUco Marker Landing](./assests/arucomarker.gif)
 
 ---
 
@@ -80,5 +80,5 @@ The architecture includes a layered safety net to handle unpredictable environme
 *Hardware-Software Interaction Map*
 ![Hardware-Software Interaction Map](./assests/hardware-software%20interaction%20map.png)
 
-*ArUco Marker Precision Landing Demonstration*
-![ArUco Marker Landing](./assests/arucomarker.gif)
+*Autonomous ArUco-Marker Landing Task Overview*
+<img src="./assests/tasks%20overview.png" alt="Task Overview" width="500">
