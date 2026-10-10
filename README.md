@@ -20,7 +20,7 @@ The system architecture utilizes a robust master-slave embedded computing paradi
 * **Companion Computer Layer (Master):** An NVIDIA Jetson Orin Nano Super running Ubuntu 22.04 with ROS2 serves as the cognitive core. It processes visual data and issues precise velocity setpoints and waypoint commands to the avionics layer over MAVLink.
 
 *Autonomous ArUco-Marker Landing Task Overview*
-![Autonomous ArUco-Marker Landing](./assets/tasks%20overview.png)
+<img src="./assets/tasks%20overview.png" alt="Task Overview" width="500">
 
 
 ![Autonomous ArUco-Marker Landing](./assets/tasks%20overview.png)
